@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const smoothiecard = ({ smoothie }) => {
 
     return (
@@ -5,6 +7,11 @@ const smoothiecard = ({ smoothie }) => {
             <h3>{smoothie.title} </h3>
             <p>{smoothie.method}</p>
             <div className="rating">{smoothie.rating}</div>
+            <div className="button">
+                <Link to={'/' + smoothie.id}>
+                    <i className="material-icons">edit</i>
+                </Link>
+            </div>
         </div>
     )
 

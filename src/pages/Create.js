@@ -24,7 +24,10 @@ const Create = () => {
     const {data,error} = await supabase
     .from('smoothies')
     .insert([{title, method, rating}])
+    navigate('/')
     
+
+    // here the cursor is not passing -- need to solve this issue later
     if(error){
       
       console.log(error);
@@ -34,7 +37,6 @@ const Create = () => {
 
       console.log(data)
       setFormError(null)
-      navigate('/')
     }
 
   }
