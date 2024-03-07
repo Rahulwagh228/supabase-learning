@@ -47,7 +47,7 @@ const Create = () => {
     <div className="page create">
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title:</label>
+        <label htmlFor="title">Name:</label>
         <input
           type="text"
           id="title"
@@ -55,7 +55,7 @@ const Create = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
 
-        <label htmlFor="method">Method:</label>
+        <label htmlFor="method">Nickname:</label>
         <textarea
           id="method"
           value={method}
@@ -70,7 +70,7 @@ const Create = () => {
           onChange={(e) => setRating(e.target.value)}
         />
 
-        <button>Create Smoothie Recipe</button>
+        <button>Create New One</button>
 
         {formError && <p className="error">{formError}</p>}
 

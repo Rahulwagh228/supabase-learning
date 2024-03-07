@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
 :root {
-  --primary: #12bca2;
-  --secondary: #6d15df;
+  --primary: #0d277a;
+  --secondary: #9651f0;
 }
 h1,h2,h3 {
   margin: 0;
@@ -40,6 +40,7 @@ nav h1 {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
+
 .smoothie-card {
   width: 100%;
   padding: 10px;
@@ -110,4 +111,11 @@ form button {
   border-radius: 6px;
   font-family: "Poppins";
   cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  .smoothie-grid {
+    grid-template-columns: 1fr;
+  }
 }

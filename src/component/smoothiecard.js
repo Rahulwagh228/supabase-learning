@@ -33,7 +33,6 @@ const smoothiecard = ({ smoothie, onDelete }) => {
                     <i className="material-icons">edit</i>
                 </Link>
                 <i className="material-icons" onClick={delethandle}>delete</i>
-
             </div>
         </div>
     )

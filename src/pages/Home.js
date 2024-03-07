@@ -23,7 +23,8 @@ const Home = () => {
       const { data, error } = await supabase
         .from('smoothies')
         .select()
-        .order(orderBy, {ascending:false})
+        .order(orderBy)
+        // .order(orderBy, {ascending:false})
 
 
         // parsar not comming
